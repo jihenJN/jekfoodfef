@@ -10,10 +10,23 @@ import { environment } from 'src/environments/environment';
 })
 export class FoodService {
   private url = environment.urlplates;
+  
   constructor(private http: HttpClient) { }
+  
+  
   getplates(): Observable<Food[]> {
     return this.http.get<Food[]>(`${this.url}`);
   }
+  
+  getplatesbyrestaurant(idrestaurant:String): Observable<Food[]> {
+    return this.http.get<Food[]>(`http://localhost:8080/api/platesbyrestaurant/${idrestaurant}`);
+  }
+
+   
+  /*getplatesbyrestaurant(): Observable<Food[]> {
+    return this.http.get<Food[]>(`http://localhost:8080/api/platesbyrestaurant/63d68c05b92e9d6e603d6a4f`);
+  }*/
+
   
 }
 

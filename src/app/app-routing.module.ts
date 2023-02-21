@@ -6,6 +6,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { OrderComponent } from './order/order.component';
+import { PlateListComponent } from './plate-list/plate-list.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:'contact',component:ContactComponent},
   {path:'order',component:OrderComponent},
   {path:'reservation',component:ReservationComponent},
+  {path:'platelist/:idrestaurant',component:PlateListComponent},
 
 ];
 

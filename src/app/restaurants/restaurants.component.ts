@@ -32,7 +32,7 @@ inintRestaurantDto(restaurants: Restaurant[]):RestaurantDto[] {
   restaurants.forEach((restaurant) => {
 
     const restDto: RestaurantDto = {
-
+      id: restaurant.id,
       name: restaurant.name,
       phone: restaurant.phone,
       address: restaurant.address,

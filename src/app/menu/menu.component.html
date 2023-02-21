@@ -40,13 +40,18 @@
            
             <span><i class="bi bi-clock"></i></span>
             {{food.cookTime}} 
-            </div>           
+           </div>           
          </div>
           <div class="price">
             <span>
-                {{food.price|currency}}
+                {{food.price}} TND
             </span>
-          </div>          
+
+            <span class="restaurant" >
+              {{food.restaurant}}
+          </span>
+          </div>              
+        
         </div>
         <div class="text-center"> 
           <button routerLink="/reservation" class="btn-book-a-table">ORDER NOW</button>  

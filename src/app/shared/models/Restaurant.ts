@@ -11,7 +11,7 @@ import { Food } from "./Food";
 
 // copying same variable names of Restaurant dto in spring boot BE
 export class Restaurant {
-
+    id:string;
     name:string;
     phone:string;
     address:string;
@@ -19,19 +19,22 @@ export class Restaurant {
    
     
     constructor() {
+      this.id='';
       this.name= '';
       this.phone= '';
       this.address= '';
       this.photo= '';
      
     }
-  
+
+
   
   }
   
   
   
   export interface RestaurantDto {
+    id :string;
     name:string;
     phone:string;
     address:string;

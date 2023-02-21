@@ -17,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { BarRatingModule } from "ngx-bar-rating";
 import { HttpClientModule } from '@angular/common/http';
+import { PlateListComponent } from './plate-list/plate-list.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
          ContactComponent,
          OrderComponent,
          FooterComponent,
-         ReservationComponent
+         ReservationComponent,
+         PlateListComponent
   ],
   imports: [
     BrowserModule,
