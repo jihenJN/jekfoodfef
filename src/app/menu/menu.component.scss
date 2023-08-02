@@ -110,3 +110,25 @@ li a:hover{
   color: #fff;
   background: rgba(206, 18, 18, 0.8);
 }
+
+
+/* Set a fixed height for the images to keep them the same size */
+ul li a img {
+    height: 220px; /* Adjust the height to your desired size */
+    width: 320px; /* Maintain the aspect ratio */
+    display: block; /* Remove any extra spacing around the images */
+    margin: 0 auto; /* Center the images horizontally within the container */
+  }
+  
+  /* Make the images responsive */
+  @media (max-width: 768px) {
+    ul li a img {
+      height: 200px; /* Adjust the height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    ul li a img {
+      height: 200px; /* Adjust the height for even smaller screens */
+    }
+  }
